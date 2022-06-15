@@ -11,7 +11,7 @@ const Producto = ({ producto }) => {
   };
 
   return (
-    <div className="col-md-3 mb-4">
+    <div className="col-md-4 col-lg-3 mb-4">
       <div className="card h-100 text-center p-4">
         <img
           className="card-img-top"

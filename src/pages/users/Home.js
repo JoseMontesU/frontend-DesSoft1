@@ -1,27 +1,57 @@
 import React from "react";
 import ProductList from "../../containers/ProductList";
-import compradora from "../../assets/images/pensando.jpg";
+import compradora from "../../assets/images/uno.jpg";
+import compradora2 from "../../assets/images/dos.png";
+import compradora3 from "../../assets/images/tres.png";
+import { Carousel } from "react-bootstrap";
+import "../../App.css";
 
 export default function Home() {
   return (
     <div>
-      <div className="hero">
-        <div className="card bg-dark text-white border-0">
-          <img
-            src={compradora}
-            className="card-img"
-            alt="Background"
-            height="550px"
-          />
-          <div className="card-img-overlay d-flex flex-column justify-content-center">
-            <div className="container">
-              <h5 className="card-title display-3 fw-bolder mb-0">
-                NEW SEASON ARRIVALS
-              </h5>
-              <p className="card-text lead fs-2">CHECK OUT ALL THE TRENDS</p>
-            </div>
-          </div>
-        </div>
+      <div className="slider">
+        <Carousel>
+          <Carousel.Item>
+            <img
+              width="100%"
+              className="img-fluid mt-3"
+              src={compradora}
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              width="100%"
+              className="img-fluid mt-3"
+              src={compradora2}
+              alt="Second slide"
+            />
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              width="100%"
+              className="img-fluid mt-3"
+              src={compradora3}
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+      <div>
         <ProductList />
       </div>
     </div>
