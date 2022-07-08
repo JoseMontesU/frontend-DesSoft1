@@ -74,6 +74,8 @@ export default function Login() {
         console.log(decoded);
         const { user_id } = decoded;
         console.log(user_id);
+        console.log(formData.email);
+        sessionStorage.setItem("email", formData.email);
         //console.log(res.data);
       });
   };

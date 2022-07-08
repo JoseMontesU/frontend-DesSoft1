@@ -7,12 +7,13 @@ import {
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import logo from "../../assets/logo/sharingan.png";
+import logo from "../../assets/logo/templarios.png";
 import { Nav, Navbar } from "react-bootstrap";
 
 export default function Header() {
   let navigate = useNavigate();
   const { state } = useContext(AppContext);
+  const email = sessionStorage.getItem("email");
 
   return (
     <div className="flex-md-row">
@@ -29,7 +30,7 @@ export default function Header() {
               height="50"
               className="me-2"
             />
-            THE COLLECTION
+            OUR PHARMACY
           </p>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -59,7 +60,9 @@ export default function Header() {
                   <p className="btn nav-link">About</p>
                 </li>
                 <li className="nav-item">
-                  <p className="btn nav-link">Contact</p>
+                  <p className="btn nav-link">
+                    {email ? <span>Bienvenid@: {email}</span> : null}
+                  </p>
                 </li>
               </ul>
             </Nav>

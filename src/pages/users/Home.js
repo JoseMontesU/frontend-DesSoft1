@@ -1,8 +1,8 @@
 import React from "react";
 import ProductList from "../../containers/ProductList";
-import compradora from "../../assets/images/uno.jpg";
-import compradora2 from "../../assets/images/dos.png";
-import compradora3 from "../../assets/images/tres.png";
+import compradora from "../../assets/images/1.jpg";
+import compradora2 from "../../assets/images/2.jpg";
+import compradora3 from "../../assets/images/3.jpg";
 import { Carousel } from "react-bootstrap";
 import "../../App.css";
 
@@ -19,8 +19,8 @@ export default function Home() {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              {/* <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -31,8 +31,8 @@ export default function Home() {
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              {/* <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -43,10 +43,10 @@ export default function Home() {
               alt="Third slide"
             />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
+              {/* <h3>Third slide label</h3>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              </p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
